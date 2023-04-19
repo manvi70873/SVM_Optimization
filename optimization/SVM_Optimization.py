@@ -65,18 +65,7 @@ df3.dropna(inplace=True)
 df3.isna().sum()
 
 
-# In[16]:
 
-
-le = LabelEncoder()
-df3.rating = le.fit_transform(df3.rating)
-
-
-# In[29]:
-
-
-df3 = pd.get_dummies(df3, columns = ['contentType','title'])
-df3.head()
 
 
 # In[53]:
